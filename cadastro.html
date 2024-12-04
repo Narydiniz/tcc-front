@@ -1,74 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
 </head>
 <body>
-   
-
-   <img class="wave" src="/img-login/1.png">
-	<div class="container" id="container">
-		<div class="img">
-			<img src="/img-login/5.png">
-		</div>
-		<div class="login-content">
-			<form >
-				<img class="img-logo" src="/img-login/2.png">
-				<h2 class="title">Seja Bem Vindo!</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Nome</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Senha</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<div class="signup-link">
-                  Não possui uma conta? <button class="modal" id="login-modal">Cadastre-se </button>
-               </div>
-            	<input type="submit" class="btn" value="Login">
-            </form>
+    
+    <div class="wrapper">
+        <div class="title-text">
+           <div class="title login">
+              Login Form
+           </div>
+           <div class="title signup">
+              Signup Form
+           </div>
         </div>
-    </div>
-      
-
-	  <!-- Modal de Login -->
-	  <div id="login-modal" class="modal">
-        <div class="modal-content login-modal">
-            <span class="close" onclick="fecharModal()">&times;</span>
-            <h2>Login</h2>
-
-            <!-- Campos de email e senha -->
-            <div class="login-campos">
-                <input type="email" id="email" placeholder="Email" required>
-                <input type="password" id="senha" placeholder="Senha" required>
-            </div>
-
-            <!-- Botão de login -->
-            <div class="login-botoes">
-                <button id="login-submit" onclick="fazerLogin()">Entrar</button>
-            </div>
-
-            <!-- Mensagem de erro -->
-            <p id="login-error" style="color: red;"></p>
+        <div class="form-container">
+           <div class="slide-controls">
+              <input type="radio" name="slide" id="login" checked>
+              <input type="radio" name="slide" id="signup">
+              <label for="login" class="slide login">Login</label>
+              <label for="signup" class="slide signup">Signup</label>
+              <div class="slider-tab"></div>
+           </div>
+           <div class="form-inner">
+              <form action="#" class="login">
+                 <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                 </div>
+                 <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Login">
+                 </div>
+                 <div class="signup-link">
+                    Not a member? <a href="">Signup now</a>
+                 </div>
+              </form>
+              <form action="#" class="signup">
+                 <div class="field">
+                    <input type="text" placeholder="Email Address" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Password" required>
+                 </div>
+                 <div class="field">
+                    <input type="password" placeholder="Confirm password" required>
+                 </div>
+                 <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Signup">
+                 </div>
+              </form>
+           </div>
         </div>
-    </div>
+     </div>
+     <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "-50%";
+          loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+          loginForm.style.marginLeft = "0%";
+          loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+          signupBtn.click();
+          return false;
+        });
+     </script>
 
-
-
-    <script src="script.js"></script>
 </body>
 </html>
