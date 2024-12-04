@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+
+   <img class="wave" src="/img-login/1.png">
+	<div class="container" id="container">
+		<div class="img">
+			<img src="/img-login/5.png">
+		</div>
+		<div class="login-content">
+			<form >
+				<img class="img-logo" src="/img-login/2.png">
+				<h2 class="title">Seja Bem Vindo!</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Nome</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Senha</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<div class="signup-link">
+                  Não possui uma conta? <button class="modal" id="login-modal">Cadastre-se </button>
+               </div>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+      
+
+	  <!-- Modal de Login -->
+	  <div id="login-modal" class="modal">
+        <div class="modal-content login-modal">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Login</h2>
+
+            <!-- Campos de email e senha -->
+            <div class="login-campos">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+
+            <!-- Botão de login -->
+            <div class="login-botoes">
+                <button id="login-submit" onclick="fazerLogin()">Entrar</button>
+            </div>
+
+            <!-- Mensagem de erro -->
+            <p id="login-error" style="color: red;"></p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
