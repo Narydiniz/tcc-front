@@ -84,7 +84,8 @@ header .navbar{
 
 }
 .hero-section .content  button{
-    background: var(--verde-claro);
+  color: white;
+    background: var(--preto);
     outline: none;
     border: none;
     font-size: 1rem;
@@ -147,11 +148,11 @@ header .navbar{
   background: #fff;
   top: 0;
   left: 0;
-  padding: 65px;
+  padding: 70px;
   border-radius: 8px;
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
   width: 100%;
-  margin-left: 90%;
+  margin-left: 190%;
 
   }
   .wrapper .title-text{
@@ -311,6 +312,73 @@ header .navbar{
     cursor: pointer;
   }
 /* Footer */
+footer{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  padding: 30px;
+  background-color:var(--preto);
+  color: var(--branco);
+  font-size: 22px;
+  padding: 100px;
+}
+footer .aboutus{
+  display: inline;
+  justify-content:center;
+}
+footer h2{
+ font-family: 'Poppins';
+ font-weight: 900;
+ color: var(--verde-claro);
+}
+footer p{
+ color: var(--amarelo);
+ text-align: justify;
+}
+footer .redes-sociais{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens na linha */
+}
+footer .redes-sociais li{
+  padding: 15px;
+  margin-right: 60px;
+}
+.quicklinks{
+  margin-left: 20%;
+}
+footer .infos, .servicos, .info{
+  list-style: none;
+  display:inline-flexbox;
+}
+footer .quicklinks a{
+  text-decoration: none;
+  color: var(--amarelo);
+}
+footer .recursos a{
+  text-decoration: none;
+  color: var(--amarelo);
+}
+footer .contact a{
+  text-decoration: none;
+  color: var(--amarelo);
+}
+.redes-sociais li:hover{
+  background: var(--verde-claro);
+  border-radius: 10px;
+}
+.infos li:hover{
+  background: var(--verde-claro);
+  border-radius: 10px;
+}
+.servicos li:hover{
+  background: var(--verde-claro);
+  border-radius: 10px;
+}
+.info li:hover{
+  background: var(--verde-claro);
+  border-radius: 10px;
+}
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
