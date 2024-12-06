@@ -16,7 +16,7 @@
     --branco: #e1e1e1;
 }
 /* Body */
-body{
+.body{
     height: 100vh;
     background: url(/imgs-variadas/7777.png);
     background-position: center;
@@ -311,8 +311,16 @@ header .navbar{
     font-weight: 500;
     cursor: pointer;
   }
+  .gestao-section{
+    height: 100vh;
+    background: url(/imgs-variadas/1111.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 /* Footer */
 footer{
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   padding: 30px;
