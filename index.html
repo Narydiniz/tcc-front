@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="Pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,156 +10,184 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 </head>
 <body>
-   <div class="body">
-    <header>
-        <nav class="navbar">
-            <!-- <img src="/imgs/logo-redonda.png" alt="logo" width="75px"> -->
-            <a href="#" class="logo">MoneyTree</a>
-            <ul class="menu-links">
-                <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="# "  onclick="openModal()" >Cadastro</a></li>
-                <li><a href="#" onclick="openModal()">Login</a></li>
-            </ul>
-            <span id="menu-btn" class="material-symbols-outlined">Menu</span>
-        </nav>
-    </header>
-    <section class="hero-section">
-        <div class="content">
-            <h1>MoneyTree é um site <br> especializado em te ajudar a <br> organizar suas finanças.</h1>
-            <p>
-                Alcance o Controle Financeiro Familiar de uma forma prática e ágil para  você e toda sua família!
-            </p>
-            <button>Comece Agora</button>
-        </div> 
-    </section>
-   <div class="gestao">
-      <section class="gestao-section">
-         <div class="gestao-content">
-            <h2>Aprenda a criar o habito de gereciar seus debitos</h2>
+    <!-- HEADER -->
+    <div class="header-container">
+        <header>
+            <nav class="navbar">
+            
+                <!-- <img src="/imgs/logo-redonda.png" alt="logo" width="75px"> -->
+                <a href="#" class="logo">MoneyTree</a>
+                <ul class="menu-links">
+                    <span id="close-menu-btn" class="material-symbols-outlined">Close</span>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="# "  onclick="openModal()" >Cadastro</a></li>
+                    <li><a href="#" onclick="openModal()">Login</a></li>
+                </ul>
+                <span id="menu-btn" class="material-symbols-outlined">Menu</span>
+            </nav>
+        </header>
+        <section class="hero-section">
+            <div class="content">
+                <h1>MoneyTree é um site <br> especializado em te ajudar a <br> organizar suas finanças.</h1>
+                <p>
+                    Alcance o Controle Financeiro Familiar de uma forma prática e ágil para  você e toda sua família!
+                </p>
+                <button>Comece Agora</button>
+            </div> 
+        </section>
+    </div>
+    <!-- MAIN -->
+    <main>
+      <!--Solução-->
+   <div class="solucao-todo" >
+        
+        
+      <section class="solucao-section">
+          <div class="solucao-title">
+              <p>Organize suas contas</p>
+              <h3>A solução para um Controle Financeiro <br> Familiar de sucesso</h3>
           </div>
-          <div class="dicas">
-            <ul>
-               <li>Registre todas as entradas e saídas</li>
-               <li>Acompanhe o vencimento das suas contas</li>
-               <li>Defina metas financeiras</li>
-               <li>Corte gastos desnecessários</li>
-               <li>Faça um orçamento</li>
-               <li>Separe as contas pessoais das contas profissionais</li>
-            </ul>
-          </div> 
+          <div class="solucao-tudo">
+              <div class="solucao-1">
+                  <h3>Suas contas e seu futuro mais seguro</h3>
+                  <p>Com seu dinheiro organizado fica muito mais <br> fácil planejar o futuro. Para te ajudar, O <br> Money Tree te dá a opção de <br> cadastro de suas contas.</p>
+              </div>
+              <div class="solucao-2">
+                  <h3>Economize tempo e dinheiro</h3>
+                  <p>Concentre suas informações financeiras em <br> um único site, e não perca tempo abrindo <br> todos os aplicativos de banco para checar seus <br> gastos.</p>
+              </div>
+              <div class="solucao-3">
+                  <h3>Simples de usar</h3>
+                  <p>O sistema foi desenhado para ser intuitivo e <br> tornar sua experiência cada vez mais natural. <br> Em pouco tempo você consegue fazer um <br> controle incrível do seu dinheiro!</p>
+              </div>
+              <div class="solucao-4">
+                  <h3>Criação de categorias</h3>
+                  <p>Crie suas próprias categorias de acordo com a <br> sua necessidade.</p>
+              </div>
+          </div>
       </section>
+
    </div>
-</div>      
- 
- <!-- Modal login -->
+ <!-- Dicas -->
+        <div class="gestao">
+            <section class="gestao-section">
+               <div class="gestao-content">
+                  <h2>Aprenda a criar o habito de gereciar seus debitos</h2>
+                </div>
+                <div class="dicas">
+                  <ul>
+                     <li>Registre todas as entradas e saídas</li>
+                     <li>Acompanhe o vencimento das suas contas</li>
+                     <li>Defina metas financeiras</li>
+                     <li>Corte gastos desnecessários</li>
+                     <li>Faça um orçamento</li>
+                     <li>Separe as contas pessoais das contas profissionais</li>
+                  </ul>
+                </div> 
+                <!-- <img class="teste" src="/imgs-variadas/fundo12.jpg" alt=""> -->
+            </section>
+         </div>
+    </main>
+    <!-- Modal login -->
 <div id="modal">
-   <div  class="modal-content login-modal">
-      <div class="wrapper" id="wrapper">
-         <span class="close" onclick="closeModal()">&times;</span>
-         <div class="title-text">
-            <div class="title login">
-               Login 
+    <div  class="modal-content login-modal">
+       <div class="wrapper" id="wrapper">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div class="title-text">
+             <div class="title login">
+                Login 
+             </div>
+             <div class="title signup">
+               Cadastro 
+             </div>
+          </div>
+          <div class="form-container">
+             <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup" >Cadastro</label>
+                <div class="slider-tab"></div>
+             </div>
+             <div class="form-inner">
+                <form action="#" class="login">
+                   <div class="field">
+                      <input type="text" placeholder="E-Mail" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Senha" required>
+                   </div>
+                   <div class="pass-link">
+                      <a href="#">Esqueceu a senha?</a>
+                   </div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="Login">
+                   </div>
+                   <div class="signup-link">
+                      Não tem cadastro<a href="">Cadastre-se</a>
+                   </div>
+                </form>
+                <form action="#" class="signup">
+                   <div class="field">
+                      <input type="text" placeholder="Nome" required>
+                   </div>
+                   <div class="field">
+                      <input type="email" placeholder="E-Mail" required>
+                   </div>
+                   <div class="field">
+                      <input type="password" placeholder="Senha" required>
+                   </div>
+                   <div class="field btn">
+                      <div class="btn-layer"></div>
+                      <input type="submit" value="Cadastro">
+                   </div>
+                </form>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+    <!-- FOOTER -->
+     <footer>
+        <div class="logo">
+            <img src="/logos-icons/logo-redonda.png" alt="" width="200px" height="200px">
+        </div>
+        <div class="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti dolor aliquid obcaecati nemo cum maiores voluptatem, fuga error quae corporis sint quas reiciendis odit neque eaque, voluptate assumenda maxime facere.</p>
+            <div class="links">
+                <ul>
+                    <li><a href=""><img src="/logos-icons/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href=""><img src="/logos-icons/instagram.svg" alt="Facebook"></a></li>
+                    <li><a href=""><img src="/logos-icons/x.svg" alt="X"></a></li>
+                    <li><a href=""><img src="/logos-icons/tiktok.svg" alt="TikTok"></a></li>         
+                </ul>
             </div>
-            <div class="title signup">
-              Cadastro 
-            </div>
-         </div>
-         <div class="form-container">
-            <div class="slide-controls">
-               <input type="radio" name="slide" id="login" checked>
-               <input type="radio" name="slide" id="signup">
-               <label for="login" class="slide login">Login</label>
-               <label for="signup" class="slide signup" >Cadastro</label>
-               <div class="slider-tab"></div>
-            </div>
-            <div class="form-inner">
-               <form action="#" class="login">
-                  <div class="field">
-                     <input type="text" placeholder="E-Mail" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Senha" required>
-                  </div>
-                  <div class="pass-link">
-                     <a href="#">Esqueceu a senha?</a>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Login">
-                  </div>
-                  <div class="signup-link">
-                     Não tem cadastro<a href="">Cadastre-se</a>
-                  </div>
-               </form>
-               <form action="#" class="signup">
-                  <div class="field">
-                     <input type="text" placeholder="Nome" required>
-                  </div>
-                  <div class="field">
-                     <input type="email" placeholder="E-Mail" required>
-                  </div>
-                  <div class="field">
-                     <input type="password" placeholder="Senha" required>
-                  </div>
-                  <div class="field btn">
-                     <div class="btn-layer"></div>
-                     <input type="submit" value="Cadastro">
-                  </div>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
- <!-- Footer -->
-   <!-- <footer>
-         <div class="aboutus" id="sobre">
-           <h2>Sobre Nós</h2> 
-           <p>Para manter a saúde financeira da sua família é essencial ter um controle de contas bem estruturado, e a melhor forma de saber quais são seus principais gastos e para onde está indo o seu dinheiro é na Money Tree. No Money Tree, você pode ter o melhor controle de suas contas, saber para onde seu dinheiro vai e além de ajudar com um planejamento financeiro simples para toda a família, para que possam alcance suas metas financeiras.</p>
-            <ul class="redes-sociais">
-              <li><a href=""><img src="/logos-icons/facebook.svg" alt="Facebook"></a></li>
-              <li><a href=""><img src="/logos-icons/instagram.svg" alt="Facebook"></a></li>
-              <li><a href=""><img src="/logos-icons/x.svg" alt="X"></a></li>
-              <li><a href=""><img src="/logos-icons/tiktok.svg" alt="TikTok"></a></li>
-         
-            </ul>
-         </div>
-         <div class="quicklinks">
-            <h2>Suporte</h2> 
-            <ul class="infos">
-               <li><a href="">FAQ</a></li>
-               <li><a href="">Politicas de Privacidade</a></li>
-               <li><a href="">Ajuda</a></li>
-               <li><a href="">Contatos</a></li>
-            </ul>
-         </div>
-         <div class="recursos">
-            <h2>Serviços</h2>
-            <ul class="servicos">
-               <li><a href="">Cadastro</a></li>
-               <li><a href="">Login</a></li>
-               <li><a href="">Calculadora</a></li>
-               <li><a href="">A pensar</a></li>
-            </ul> 
-         </div>
-         <div class="contact">
+        </div>
+        <div class="recursos">
+            <h2>Servios</h2>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Politicas de Privacidade</a></li>
+                <li><a href="">Ajuda</a></li>
+                <li><a href="">Contatos</a></li>
+             </ul>
+        </div>
+        <div class="contato">
             <h2>Contato</h2> 
-            <ul class="info">
-               <li>
-                  <span><img class="img-" src="/logos-icons/whatsapp.svg" alt=""></span><p><a href="#">(86) 9 1122-3344</a></p>
-               </li>
-               <li>
-                  <span><img class="img-" src="/logos-icons/outlook.svg" alt=""></span><p><a href="#">moneytree@email.com</a></p>
-               </li>
-            </ul>
-         </div>
-      </footer> -->
-<!-- <div class="copyright">
-   <p>&COPY;Copiright 2025 MoneyTree</p>
-</div> -->
-<script src="app.js"></script>
+         <ul class="info">
+            <li>
+               <span><img class="img-" src="/logos-icons/whatsapp.svg" alt=""></span><p><a href="#">(86) 9 1122-3344</a></p>
+            </li>
+            <li>
+               <span><img class="img-" src="/logos-icons/outlook.svg" alt=""></span><p><a href="#">moneytree@email.com</a></p>
+            </li>
+         </ul>
+        </div>
+     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
