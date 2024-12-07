@@ -18,9 +18,10 @@
 }
 /* ========================================================   BODY    ================================================================================= */
 body{
-  background: linear-gradient(to top, #356224,#95cb81,#e1e1e1 );
+  background: linear-gradient(to top, #356224,#95cb81 );
 }
 .header-container{
+    width:100vw;
     height: 100vh;
     background: url(/imgs-variadas/fundo-1.png);
     background-position: center;
@@ -119,6 +120,7 @@ header .navbar{
     cursor: pointer;
     display: none;
 }
+/* Gestão */
 .gestao{
     height: 100vh;
    font-family: 'Poppins', sans-serif;
@@ -150,16 +152,19 @@ font-weight: 700;
   color: var(--branco);
   justify-items: flex-start;
 }
-
-
-
 /* Solução */
+.solucao{
+  width: 100vw;
+  height: 100vh;
+}
+.opcoes{
+  width: 100vw;
+  height: 100vh;
+}
 .solucao-title{
   align-items: flex-start;
   padding: 95px;
   padding-left: 555px;
- 
-  
 }
 .solucao-title p{
 font-size: 25px;
@@ -188,17 +193,12 @@ justify-content: flex-end; /* Alinha os itens para a direita */
 padding-left: 408px;
 margin-bottom: 10px; /* Espaçamento entre as seções */
 font-size: 30px;
-
-
 }
-
 .solucao-1, .solucao-2, .solucao-3, .solucao-4{
 width: 45%; /* 48% para garantir um pequeno espaço entre as colunas */
 box-sizing: border-box; /* Inclui padding e border na largura total */
 margin-bottom: 90px; /* Espaçamento entre as seções */
-
 }
-
 .solucao-tudo p{
 font-size: 25px;
 }
@@ -211,7 +211,6 @@ height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 /* ========================================================  MODAL LOGIN  ================================================================================= */
 
@@ -417,6 +416,10 @@ footer{
   background: var(--preto);
   display: grid;
   grid-template-columns: repeat(4, 2fr);
+  color: var(--branco);
+}
+.sobre h2{
+  text-align: center;
 }
 .logo{
   margin-left: 30px;
@@ -428,12 +431,74 @@ footer{
   text-align: justify;
   margin-right: 50px;
 }
+.sobre p{
+  color: var(--branco);
+}
 .links{
   display: inline;
 }
-.links ul{
+.ul-container, .info{
   list-style: none;
-
+}
+.ul-rs li{
+  display: inline-flex;
+  padding: 10px;
+}
+.ul-rs li:hover{
+  background: var(--verde-claro);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50px; 
+  height: 50px;
+  transition: 0.1s ease-in-out;
+}
+.recursos{
+  margin-left: 10%;
+}
+.ul-container a{
+  text-decoration: none;
+  color: var(--branco);
+}
+.ul-container a:hover{
+  background: var(--verde-claro);
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--preto);
+}
+.info a{
+  text-decoration: none;
+  color: var(--branco);
+}
+.info li {
+  display: flex; 
+  align-items: center; 
+}
+.info a:hover{
+  background: var(--verde-claro);
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--preto);
+}
+.info img {
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px; 
+}
+.info img:hover{
+  background: var(--verde-claro);
+  border-radius: 10px;
+  width: 60px; 
+  height: 60px; 
+  cursor: pointer;
+}
+.contato h2{
+  margin-left: 50px;
+}
+.copy p{
+  background: var(--verde-claro);
+  text-align: center;
 }
 /* ========================================================  RESPONSIVIDADE  ================================================================================= */
 
